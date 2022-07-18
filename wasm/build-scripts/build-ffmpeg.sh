@@ -35,6 +35,7 @@ FLAGS=(
   --post-js wasm/src/post.js
   $OPTIM_FLAGS
   ${EXTRA_FLAGS[@]}
+  -lidbfs.js
 )
 echo "FFMPEG_EM_FLAGS=${FLAGS[@]}"
 emmake make -j
