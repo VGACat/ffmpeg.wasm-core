@@ -10,6 +10,10 @@ Module['quit'] = function(status) {
 
 Module['exit'] = exit;
 
+if (window['ffmpegWasmBinary']) { // try to prevent from mangling by clojure compiler
+  Module['wasmBinary'] = window['ffmpegWasmBinary'];
+}
+
 /**
  * Disable all console output, might need to enable it
  * for debugging
