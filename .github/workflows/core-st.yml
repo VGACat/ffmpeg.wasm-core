@@ -2,10 +2,10 @@ name: Build FFmpeg.wasm (Single Thread)
 on:
   push:
     branches:
-      - n4.3.1-wasm
+      - for-extensions
   pull_request:
     branches:
-      - n4.3.1-wasm
+      - for-extensions
 
 env:
   FFMPEG_ST: yes
