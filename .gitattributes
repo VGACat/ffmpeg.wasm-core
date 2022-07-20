@@ -1,2 +1,5 @@
 *.pnm -diff -text
+*.sh text eol=lf
+configure text eol=lf
+*/configure text eol=lf
 tests/ref/fate/sub-scc eol=crlf
