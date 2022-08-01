@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+  api:
+    entrypoint: sh -c "\
+      mkdir -p /app/output && \
+      cp -r /app/wasm/packages/core-st/dist /app/output && \
+      echo 'List files in output:' &&\
+      ls -R /app/output &&\
+      echo '\\nDone!'"
+    build:
+      context: .
+    volumes:
+      - ./output:/app/output
+
