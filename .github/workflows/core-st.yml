@@ -6,6 +6,7 @@ on:
   pull_request:
     branches:
       - for-extensions
+  workflow_dispatch:
 
 env:
   FFMPEG_ST: yes
